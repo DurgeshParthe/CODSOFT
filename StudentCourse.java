@@ -19,7 +19,7 @@ import java.util.Scanner;
 
 
  
-public class CourseRegistration{
+public class StudentCourse{
     public static void main(String[] args) {
         System.out.println("### STUDENT COURSE REGISTRATION SYSTEM ###");
 
