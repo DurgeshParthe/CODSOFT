@@ -18,7 +18,7 @@ import java.util.Scanner;
 
 
 
-// main class representing the course registration system
+ 
 public class CourseRegistration{
     public static void main(String[] args) {
         System.out.println("### STUDENT COURSE REGISTRATION SYSTEM ###");
@@ -28,17 +28,16 @@ public class CourseRegistration{
         Course biCourse = new Course("BI0201", "Biology Fundamentals", "Introduction to biology", 25, "Tue/Thu 2:00 PM");
 
         // Sample Students
-        Student student1 = new Student(1, "John Doe");
-        Student student2 = new Student(2, "Jane Doe");
+        Student student1 = new Student(1, "Omkar");
+        Student student2 = new Student(2, "Kaushal");
 
-        // Course Registration
+      
         student1.registeCourses(mathCourse);
         student1.registeCourses(biCourse);
 
         student2.registeCourses(biCourse);
 
-
-        // Displaying Registered Courses for Students
+ 
         System.out.println("\n" + student1.name + "'s Registered Courses:");
         for(Course course : student1.registeCourses) {
             System.out.println(course.title);
@@ -49,11 +48,11 @@ public class CourseRegistration{
             System.out.println(course.title);
         }
 
-        // Course Removal
+         
         student1.removeCourse(mathCourse);
         student2.removeCourse(biCourse);
 
-        // Displaying Registered Courses after removal
+        
         System.out.println("\nAfter Course Reoval:");
         for(Course course : student1.registeCourses) {
             System.out.println(student1.name + ": " + course.title);
