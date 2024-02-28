@@ -10,7 +10,7 @@ Display Results: Show the total marks, average percentage, and the corresponding
 
 import java.util.Scanner;
 
-public class GradeCalculator {
+public class Gradecal{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
